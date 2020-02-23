@@ -1,0 +1,337 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main-header{
+    background: url(../img/landscape2.jpg) center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.header-container{
+    background-color: rgb(255, 255, 255);
+    color:  rgb(141, 141, 141);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 0;
+    font-weight: 500;
+    top: 0;
+    z-index: 100;
+    border-bottom: rgb(189, 189, 189) solid 0.5px;
+}
+
+.header-container h1{
+    margin-left: 1em;
+    font-size: 30px;
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.nav{
+    width: 100%;
+    font-size: 20px;
+    margin-right: 4em;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: rgb(49, 49, 49);
+}
+
+.header-container ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container li {
+    padding-left: 2em;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header-container li a {
+    color: #5c5c5c;
+    text-decoration: none;
+    transition: all ease-in-out 0.1s;
+}
+
+.header-container li a:hover {
+    color: black;
+}
+
+.header-container a{
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+}
+
+.header-container2{
+    position: relative;
+    width: 450px;
+    height: 230px;
+    top: 30%;
+    left: 53%;
+}
+
+.card{
+    padding: 0;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: rgba(82, 82, 82, 0.6);
+    font-size: 40px;
+}
+
+.btn{
+    box-sizing: border-box;
+    padding: 0.8em 1.3em;
+    background-color: rgb(255, 120, 11);
+    border-radius: 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.2s;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn2{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0.8em 1.3em;
+    background-color: rgb(255, 120, 11);
+    border-radius: 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.2s;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover{
+    background-color: rgba(255, 80, 11, 0.95);
+    border: rgba(255, 40, 11, 0.95) solid 1px;
+}
+
+.btn2:hover{
+    background-color: rgba(255, 80, 11, 0.95);
+    border: rgba(255, 40, 11, 0.95) solid 1px;
+}
+
+#about{
+    position: relative;
+    background-color: rgb(245, 245, 245);
+    color: rgb(92, 92, 92);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.photo{
+    position: relative;
+    width: 484px;
+    height: 322px;
+}
+
+.overlay .link{
+    position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(18, 175, 175, 0.8);
+	opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 4em;
+    text-decoration: none;
+}
+
+.overlay:hover .link{
+	opacity: 1;
+}
+
+.overlay_main .link{
+    position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(121, 112, 100);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 6em;
+    text-decoration: none;
+}
+
+.main_card{
+    position: relative;
+    width: 484px;
+    height: 322px;
+}
+
+#europe_ev{
+    position: relative;
+    background-color: white;
+    color: rgb(80, 80, 80);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#australia_ev{
+    position: relative;
+    background-color: rgb(245, 245, 245);
+    color: rgb(92, 92, 92);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#africa_ev{
+    position: relative;
+    background-color: white;
+    color: rgb(80, 80, 80);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#bf_footer{
+    color: white;
+    font-size: 100px;
+    width: 100%;
+    height: 155px;
+    text-align: center;
+    background-color: rgb(199, 199, 199);
+}
+
+.socialdivs{
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.fb{
+    padding-top: 20px;
+    width: 250px;
+    height: 135px;
+    float: left;
+}
+
+.fb:hover{
+    background-color: #4668b3;
+}
+
+.ig{
+    padding-top: 20px;
+    width: 250px;
+    height: 135px;
+    float: left;
+}
+
+.ig:hover{
+    background-color: #cd486b;
+}
+
+.tw{
+    padding-top: 20px;
+    width: 250px;
+    height: 135px;
+    float: left;
+}
+
+.tw:hover{
+    background-color: #3095d3;
+}
+
+.gplus{
+    padding-top: 20px;
+    width: 250px;
+    height: 135px;
+    float: left;
+}
+
+.gplus:hover{
+    background-color: #d95333;
+}
+
+.socialdivs a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    box-sizing: border-box;
+    padding: 30px;
+    padding-left: 20px;
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy{
+    margin: 0;
+    padding: 0;
+}
+
+footer p{
+    display: inline;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-right: white solid 1px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#last{
+    border-right: none;
+}
+
+#foot{
+    display: inline;
+    font-size: 35px;
+    text-align: right;
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
