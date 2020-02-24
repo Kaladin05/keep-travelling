@@ -158,8 +158,8 @@ body{
 
 .photo{
     position: relative;
-    width: 484px;
-    height: 322px;
+    max-width: 484px;
+    max-height: 322px;
 }
 
 .overlay .link{
